@@ -4,4 +4,9 @@ class CreatePassengers < ActiveRecord::Migration
       t.timestamps null: false
     end
   end
+
+  change_table :taxis do |t|
+    t.integer :ride_id
+  end
+  
 end
